@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+    body {
+        background-color: #051C53;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .bim-green-text {
+        color:#319E6E;
+    }
+    .bim-green-bg {
+        background-color: #319E6E;
+    }
+    .bim-green-border {
+        border: 2px solid #319E6E;
+    }
+    /********navigation*******/
+    .menu-items a {
+        color: white;
+        transition: 0.5s;
+    }
+
+    .menu-items a:hover {
+        color: #319E6E;
+    }
+    .navbar .active a{
+        color: #319E6E;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .bim-toggle {
+        color: white;
+    }
+    /***hero section home****/
+    .hero-text h1 {
+        font-size: 6rem;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    /*****buttons and icons******/
+    .btn-bim {
+        border: 1px solid #319E6E;
+        color: #319E6E;
+        font-weight: 500;
+        width: 150px;
+        height: 60px;
+        transition: 0.5s;
+    }
+
+    .btn-bim i {
+        color: #319E6E;
+    }
+
+    .btn-bim:hover {
+        border: none;
+        background-color: #319E6E;
+        border-radius: 0px;
+        color: white;
+    }
+
+    .btn-bim:hover>i {
+        color: white;
+    }
+
+    .btn-bim-fill {
+        background-color: rgba(11, 216, 137, 0.5);
+        color:white;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+    .btn-bim-fill:hover {
+        background-color: #319E6E;
+        color:white;
+    }
+    .btn-bim-fill:focus {
+        background-color: #319E6E;
+        color:white;
+    }
+    .btn-active {
+        background-color: #319E6E;
+        color:white;
+    }
+    /*******test style**********/
+    .stroke-text {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: white;
+        font-weight: 900;
+    }
+    .big-title {
+        text-align: center;
+        font-size: 7rem;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    .contact-titles {
+        font-size: 6rem; 
+        font-family: 'Barlow Semi Condensed', sans-serif;
+    }
+    .about-section p {
+        text-align: justify;
+        font-weight: 500;
+    }
+    /**********video section******/
+    .video-section .ratio {
+        border: 3px solid #319E6E;
+        border-radius: 20px;
+    }
+    .video-section .ratio iframe{
+        border-radius: 18px;
+    }
+    /*********horizontal lines***********/
+    .prog-line {
+        background-color: #319E6E;
+        height: 3px !important;
+        width: 75%;
+        opacity: 1;
+    }
+    /*******cards*********/
+    .card {
+        border: 3px solid white;
+    }
+    .card, .card-img {
+        border-radius: 20px;
+    }
+
+    /***********Billetterie**********/
+    .pass {
+        border: 5px solid white;
+        border-radius: 20px;
+        height:30rem;
+    }
+    .bill-frame{
+        min-height: 480px;
+    }
+    /****** input placehoders ******/
+    .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #c4c4c4;
+        opacity: 1; /* Firefox */
+    }
+
+    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #c4c4c4;
+    }
+
+    .form-control::-ms-input-placeholder { /* Microsoft Edge */
+            color: #c4c4c4;
+    }
+    .form-control {
+        caret-color: white;
+    }
+    #contactForm .form-control {
+        color:white;
+    }
+    #contactForm .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #319E6E;
+        opacity: 1; /* Firefox */
+    }
+
+    #contactForm .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #319E6E;
+    }
+
+    #contactForm .form-control::-ms-input-placeholder { /* Microsoft Edge */
+            color: #c4c4c4;
+    }
+    #contactForm .form-control {
+        caret-color: #319E6E;
+    }
+    /**********conferences social icon***********/
+    .social {
+        height:50px;
+        width: 50px;
+        border: 2px solid white;
+        transition: 0.5s;
+    }
+    .social i{
+        font-size: 30px;
+    }
+    .social:hover {
+        border-color: #319E6E;
+        background-color: #319E6E;   
+    }
+    /*********footer social icons*************/
+    .social-icons li {
+        height:50px;
+        width: 50px;
+        border: 2px solid white;
+        transition: 0.5s;
+    }
+    .social-icons li i{
+        font-size: 30px;
+    }
+    .social-icons li:hover {
+        border-color: #319E6E;
+        background-color: #319E6E;
+    }
+    /**********back to top***********/
+        
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #319E6E;
+            color: #FFF;
+            z-index: 9999;
+            -webkit-transition: 0.2s opacity;
+            transition: 0.2s opacity;
+            cursor: pointer;
+            border-radius: 10%;
+            font-size: 20px; }
+            #back-to-top:after {
+            content: "\f106";
+            font-family: 'FontAwesome'; }
+            #back-to-top:hover {
+            opacity: 0.8; }
+        
+    /*********responsive************/
+    @media (max-width: 991px) {
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+            background-color: rgba(5, 28, 83, 0.9)!important;
+        }
+        .menu-items a {
+        font-size: 3rem;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: white;
+        cursor: pointer;
+        }
+        .menu-items a:hover {
+        -webkit-text-stroke-color: #319E6E;  
+        }
+        .navbar .active a {
+        -webkit-text-stroke-color: #319E6E;  
+        }
+        .prog-line {
+            width: 100%;
+        }
+    }
+    @media (max-width: 520px) {
+        .big-title {
+            font-size:4rem;
+        }
+        .contact-titles {
+            font-size: 3rem; 
+        }
+    }
+    @media (min-width: 520px) and (max-width: 768px) {
+        .big-title {
+            font-size:5rem;
+        }
+        .contact-titles {
+            font-size: 4rem; 
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 868px) {
+        .big-title {
+            font-size:6rem;
+        }
+        .contact-titles {
+            font-size: 4rem; 
+        }
+    }
+
+    @media (min-width: 869px) and (max-width: 991px) {
+        .big-title {
+            font-size:6rem;
+        }
+        .contact-titles {
+            font-size: 4rem; 
+        }
+    }
