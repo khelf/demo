@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
     body {
-        background-color: #051C53;
+        /* background-color: #051C53; */
+        background: linear-gradient(180deg, #020D1F 0%, #051746 16.11%, #092863 30.04%, #092964 100%);
         color: white;
         font-family: 'Roboto', sans-serif;
     }
@@ -38,6 +39,12 @@
     .hero-text h1 {
         font-size: 6rem;
         font-family: 'Barlow Semi Condensed', sans-serif;
+        line-height: 0.8;
+    }
+    .arrow-btn {
+        line-height: 0;
+        font-weight: bold;
+        font-size: 40px;
     }
     /*****buttons and icons******/
     .btn-bim {
@@ -130,10 +137,41 @@
     .pass {
         border: 5px solid white;
         border-radius: 20px;
-        height:30rem;
+        height: 26.5rem;
+    }
+    .pass .price {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #319E6E;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 900;
+        font-size: 3rem;
+        line-height: 0.8;
     }
     .bill-frame{
         min-height: 480px;
+    }
+    /*******exposition*******/
+    .expo-input {
+        border:none;
+        color:white;
+        caret-color: white;
+        height: 45px;
+    }
+    .expo-input:focus {
+        outline: none;
+        color: #c4c4c4;
+    }
+
+    .expo-input::placeholder {
+        color:white !important;
+        opacity: 1;
+    }
+    .expo-arrow{
+        line-height: 0;
+        font-weight: bold;
+        font-size: 40px;
     }
     /****** input placehoders ******/
     .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -169,6 +207,74 @@
     #contactForm .form-control {
         caret-color: #319E6E;
     }
+    /***********Contact select style***************/
+                                /*the container must be positioned relative:*/
+                                .custom-select {
+                                    position: relative;
+                                    font-family: inherit;
+                                    border: 2px solid #319E6E;
+                                    border-radius: 5px;
+                                }
+    
+                                .custom-select select {
+                                    display: none;
+                                    /*hide original SELECT element:*/
+                                }
+    
+                                .select-selected {
+                                    background-color: transparent;
+                                }
+    
+                                /*style the arrow inside the select element:*/
+                                .select-selected:after {
+                                    position: absolute;
+                                    content: "";
+                                    top: 18px;
+                                    right: 15px;
+                                    width: 0;
+                                    height: 0;
+                                    border: 6px solid transparent;
+                                    border-color: #319E6E transparent transparent transparent;
+                                }
+    
+                                /*point the arrow upwards when the select box is open (active):*/
+                                .select-selected.select-arrow-active:after {
+                                    border-color: transparent transparent #319E6E transparent;
+                                    top: 7px;
+                                }
+    
+                                /*style the items (options), including the selected item:*/
+                                .select-items div,
+                                .select-selected {
+                                    color: #319E6E;
+                                    font-size: 1.3rem;
+                                    font-family: inherit;
+                                    padding: 8px 16px;
+                                    cursor: pointer;
+                                    user-select: none;
+                                }
+    
+                                /*style items (options):*/
+                                .select-items {
+                                    position: absolute;
+                                    background-color: #051C53;
+                                    border-radius: 5px;
+                                    border: 1px solid #319E6E;
+                                    top: 100%;
+                                    left: 0;
+                                    right: 0;
+                                    z-index: 99;
+                                }
+    
+                                /*hide the items when the select box is closed:*/
+                                .select-hide {
+                                    display: none;
+                                }
+    
+                                .select-items div:hover,
+                                .same-as-selected {
+                                    background-color: rgba(49, 158, 111, 0.514);
+                                }
     /**********conferences social icon***********/
     .social {
         height:50px;
@@ -230,7 +336,7 @@
             right: 0;
             left: 0;
             z-index: 1030;
-            background-color: rgba(5, 28, 83, 0.9)!important;
+            background-color: rgba(0, 14, 36, 0.9)!important;
         }
         .menu-items a {
         font-size: 3rem;
