@@ -42,7 +42,7 @@ $(document).ready(function(){
                 $('body').toggleClass('modal-open');
             });
 })(jQuery);
-
+/* Newsletter */
 function subscribetonewsletter(){
   var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange=function() {
@@ -68,6 +68,35 @@ function subscribetonewsletter(){
   xhttp.send();
   }else{
   document.getElementById("_subscribetonewsletterstatus").innerHTML="Veuillez vérifier vos informations";
+  }
+
+}
+/* Devenir exposant */
+function devenirexposant(){
+  var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange=function() {
+      console.log(this.readyState);
+         if (this.readyState == 4) {           
+        if(!(this.response).includes("Error")){
+    document.getElementById("exposant_email").value ="";
+    document.getElementById("_devenirexposantstatus").innerHTML="Merci de vous êtes inscrit pour devenir exposant.";
+    }else {document.getElementById("_devenirexposantstatus").innerHTML="Veuillez vérifier vos informations";}
+     }
+    };
+  xhttp.timeout = 5000;
+  xhttp.ontimeout=function (){
+      document.getElementById("_devenirexposantstatus").innerHTML="Veuillez réessayer ou vérfier votre connexion";
+  };
+  document.getElementById("_devenirexposantstatus").innerHTML ="Envoi en cours...";
+  var email=document.getElementById("exposant_email").value;
+  var state = false;
+  state = validateEmail(email);
+  if(state){
+  var url="exposant.php?&email="+encodeURIComponent(email);
+  xhttp.open("GET", url, true);
+  xhttp.send();
+  }else{
+  document.getElementById("_devenirexposantstatus").innerHTML="Veuillez vérifier vos informations";
   }
 
 }
