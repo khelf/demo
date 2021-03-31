@@ -63,7 +63,6 @@
     .btn-bim:hover {
         border: none;
         background-color: #319E6E;
-        border-radius: 0px;
         color: white;
     }
 
@@ -109,6 +108,7 @@
     .about-section p {
         text-align: justify;
         font-weight: 500;
+        font-size: 0.9rem;
     }
     /**********video section******/
     .video-section .ratio {
@@ -137,7 +137,14 @@
     .pass {
         border: 5px solid white;
         border-radius: 20px;
-        height: 26.5rem;
+        height: 24rem;
+    }
+    .pass .special-p {
+        line-height: 2.4;
+    }
+    .pass .lead {
+        line-height: 0.8rem;
+        font-size: 1.5rem;
     }
     .pass .price {
         color: transparent;
@@ -153,6 +160,9 @@
         min-height: 480px;
     }
     /*******exposition*******/
+    #expo-btn {
+        opacity: 1;
+    }
     .expo-input {
         border:none;
         color:white;
@@ -327,7 +337,12 @@
             font-family: 'FontAwesome'; }
             #back-to-top:hover {
             opacity: 0.8; }
-        
+    /******fond******/
+    .fond {
+        width:35%;
+        z-index:-1;
+        right:0;
+    }  
     /*********responsive************/
     @media (max-width: 991px) {
         .navbar {
@@ -363,8 +378,25 @@
         .contact-titles {
             font-size: 3rem; 
         }
+        .fond {
+            width:90%;
+        }  
     }
-    @media (min-width: 520px) and (max-width: 768px) {
+    @media (min-width:521px) and (max-width:670px) {
+        .fond {
+            width:75%;
+        }  
+        .big-title {
+            font-size:4rem;
+        }
+        .contact-titles {
+            font-size: 3rem; 
+        }
+    }
+    @media (min-width: 671px) and (max-width: 768px) {
+        .fond {
+            width:70%;
+        }  
         .big-title {
             font-size:5rem;
         }
@@ -373,7 +405,10 @@
         }
     }
 
-    @media (min-width: 768px) and (max-width: 868px) {
+    @media (min-width: 769px) and (max-width: 868px) {
+        .fond {
+            width:55%;
+        }  
         .big-title {
             font-size:6rem;
         }
@@ -383,6 +418,9 @@
     }
 
     @media (min-width: 869px) and (max-width: 991px) {
+        .fond {
+            width:50%;
+        }  
         .big-title {
             font-size:6rem;
         }
