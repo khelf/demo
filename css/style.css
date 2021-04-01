@@ -343,6 +343,91 @@
         z-index:-1;
         right:0;
     }  
+        /*******blog*****/
+        .blog-border {
+            border-radius: 15px;
+            border: 8px solid #319E6E;
+        }
+        .blog-stroke {
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: white;
+            font-weight: 900;
+            font-style: italic;
+        }
+        .blog-text {
+            text-align: justify;
+            font-size:1.2rem;
+        }
+        .speaker {
+            position: absolute;
+            z-index: -1;
+        }
+        .article1 {
+            width: 60%;
+            right: 65px;
+        }
+        .article2-1 {
+            width: 45%;
+            right: 115px;
+        }
+        .article2-2 {
+            width: 45%;
+            left: 165px;
+        }
+        .article3 {
+            width: 75%;
+            left:25px;
+        }
+        .article4-1 {
+            width: 65%;
+            left:25px;
+        }
+        .article4-2 {
+            width: 60%;
+            right:25px;
+        }
+        .article5 {
+            width: 75%;
+            left:60px;
+        }
+        .article6-1 {
+            width: 60%;
+            left:50px;
+        }
+        .article6-2 {
+            width: 60%;
+            right:10px;
+        }
+        .article7-1 {
+            width: 50%;
+            left: 100px;
+        }
+        .article7-2 {
+            width: 50%;
+            right: 50px;
+        }
+        .article8-1 {
+            width: 50%;
+            right: 50px;
+        }
+        .article8-2 {
+            width: 50%;
+            right: 100px;
+        }
+        .article9 {
+            width: 40%;
+            left: 50px;
+        }
+        .article10-1 {
+            width: 60%;
+            left: 100px;
+        }
+        .article10-2 {
+            width: 70%;
+            right: 50px;
+        }
     /*********responsive************/
     @media (max-width: 991px) {
         .navbar {
