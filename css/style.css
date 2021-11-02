@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
     body {
         /* background-color: #051C53; */
         background: linear-gradient(180deg, #020D1F 0%, #051746 16.11%, #092863 30.04%, #092964 100%);
         color: white;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Barlow Semi Condensed', sans-serif;
     }
     .bim-green-text {
         color:#319E6E;
+        text-transform: uppercase;
     }
     .bim-green-bg {
         background-color: #319E6E;
@@ -51,13 +51,14 @@
         border: 1px solid #319E6E;
         color: #319E6E;
         font-weight: 500;
-        width: 150px;
+        width: 11rem;
         height: 60px;
         transition: 0.5s;
     }
 
     .btn-bim i {
         color: #319E6E;
+        line-height: 0;
     }
 
     .btn-bim:hover {
@@ -95,11 +96,13 @@
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: white;
         font-weight: 900;
+        text-transform: uppercase;
     }
     .big-title {
         text-align: center;
         font-size: 7rem;
         font-family: 'Barlow Semi Condensed', sans-serif;
+        text-transform: uppercase;
     }
     .contact-titles {
         font-size: 6rem; 
@@ -122,8 +125,11 @@
     .prog-line {
         background-color: #319E6E;
         height: 3px !important;
-        width: 75%;
+        width: 100%;
         opacity: 1;
+    }
+    .conferencier {
+        text-align: justify;
     }
     /*******cards*********/
     .card {
@@ -216,6 +222,9 @@
     }
     #contactForm .form-control {
         caret-color: #319E6E;
+    }
+    #contactForm .form-control:focus {
+        background-color: transparent!important;
     }
     /***********Contact select style***************/
                                 /*the container must be positioned relative:*/
@@ -341,7 +350,8 @@
     .fond {
         width:35%;
         z-index:-1;
-        right:0;
+        right: 0;
+        padding: 0;
     }  
         /*******blog*****/
         .blog-border {
@@ -439,10 +449,10 @@
             background-color: rgba(0, 14, 36, 0.9)!important;
         }
         .menu-items a {
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: transparent;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-width: 1.2px;
         -webkit-text-stroke-color: white;
         cursor: pointer;
         }
